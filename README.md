@@ -110,3 +110,4 @@ tests/employee-events/      # new-hire.spec.ts: @smoke, validation, happy path E
 # buesuite-playwright
 # BueSuite
 # BueSuite
+# BueSuite
