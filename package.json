@@ -1,0 +1,27 @@
+{
+  "name": "buesuite-e2e",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Playwright end-to-end automation for the BueSuite web app",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "test:debug": "playwright test --debug",
+    "test:smoke": "playwright test --grep @smoke",
+    "test:setup": "playwright test --project=setup",
+    "report": "playwright show-report",
+    "codegen": "playwright codegen --load-storage=playwright/.auth/manager.json http://localhost:4200",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^9.8.0",
+    "@playwright/test": "^1.53.0",
+    "@types/node": "^22.15.0",
+    "dotenv": "^16.5.0",
+    "typescript": "~5.8.3"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
